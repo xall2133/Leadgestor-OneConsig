@@ -78,7 +78,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       id: data.id,
       nome: data.nome,
       role: 'USER',
-      telefone: data.telefone
+      telefone: data.telefone,
+      avatar: data.avatar // Agora lê a foto do banco
     };
 
     // Logar acesso

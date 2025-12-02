@@ -63,6 +63,7 @@ export interface AppUser {
   nome: string;
   role: 'ADMIN' | 'USER';
   telefone?: string;
+  avatar?: string; // CAMPO ADICIONADO PARA CORRIGIR O ERRO
 }
 
 export interface AuthorizedUser {
@@ -73,6 +74,7 @@ export interface AuthorizedUser {
   data_inicio: string;
   data_fim?: string;
   observacoes?: string;
+  avatar?: string; // Para persistência no banco
 }
 
 export interface UserProfile {
